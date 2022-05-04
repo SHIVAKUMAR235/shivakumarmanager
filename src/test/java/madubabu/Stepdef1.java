@@ -28,7 +28,7 @@ public class Stepdef1
       sh.driver=new ChromeDriver(); 
       sh.obj1=new pageClass1(sh.driver);
       
-      
+      //run
       sh.obj2=new Logout(sh.driver);
       sh.driver.manage().window().maximize();
       
