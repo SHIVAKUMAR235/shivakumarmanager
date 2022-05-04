@@ -7,7 +7,7 @@ import io.cucumber.java.Scenario;
 import pageclasses.Logout;
 import pageclasses.pageClass1;
 
-public class Sharedclass
+public class SharedClass
 {
 	RemoteWebDriver driver;
 	pageClass1 obj1; 
