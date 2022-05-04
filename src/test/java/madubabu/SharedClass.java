@@ -9,6 +9,7 @@ import pageclasses.pageClass1;
 
 public class SharedClass
 {
+	//declaring the objects
 	RemoteWebDriver driver;
 	pageClass1 obj1; 
 	Logout obj2;

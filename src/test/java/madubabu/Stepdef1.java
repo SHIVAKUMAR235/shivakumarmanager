@@ -22,7 +22,7 @@ public class Stepdef1
  
  
  @Given("open browser {string}")
- public void open_browser(String string) 
+ public void method1(String string) 
  {
      WebDriverManager.chromedriver().setup();
       sh.driver=new ChromeDriver(); 
@@ -35,7 +35,7 @@ public class Stepdef1
  }
 
  @When("launch site {string}")
- public void i_launch_site(String url) 
+ public void method2(String url) 
  {
     sh.driver.get(url); 
  }
@@ -43,7 +43,7 @@ public class Stepdef1
 
 
  @When("click on login button and use this ud {string} and pw {string}")
- public void i_entered_a_value_and_verify_title(String x,String y) throws Exception
+ public void method3(String x,String y) throws Exception
  {
    sh.obj1.FillMoblie(x);  
    sh.obj1.FillPassword(y);
@@ -51,7 +51,7 @@ public class Stepdef1
  }
  
  @Then("homepage should be displayed")
- public void title_should_be()
+ public void method4()
  {
   String x=sh.driver.findElement(By.xpath("//img[@title='Flipkart']")).getAttribute("title");
      if(x.equals("Flipkart"))
@@ -62,12 +62,12 @@ public class Stepdef1
      else
      {
     	 System.out.println("Home page is not displyed");
-    
+     
      }
  }
  
  @When("click on logout")
- public void close_sit() throws Exception
+ public void method5() throws Exception
  {
 	WebElement e=sh.driver.findElement(By.xpath("//div[text()='My Account']"));
 	Actions a=new Actions(sh.driver);
@@ -77,7 +77,7 @@ public class Stepdef1
  }
  
  @When("close browser")
- public void close_si()
+ public void method6()
  {
 	 sh.driver.close();
  }
