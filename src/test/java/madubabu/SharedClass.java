@@ -4,10 +4,11 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import pageclasses.Logout;
+import pageclasses.pageClass1;
 
-public class SharedClass
+public class Sharedclass
 {
-
 	RemoteWebDriver driver;
 	pageClass1 obj1; 
 	Logout obj2;
@@ -15,11 +16,8 @@ public class SharedClass
 	
 	@Before
 	public void method(Scenario x)
-	
-   {
-
+    {
+		
 		s=x;
 	}
-	
-	
 }
