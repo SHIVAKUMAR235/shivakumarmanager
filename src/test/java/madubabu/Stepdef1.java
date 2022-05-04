@@ -14,8 +14,8 @@ import pageclasses.pageClass1;
 
 public class Stepdef1 
 {
-	public Sharedclass sh;
- public Stepdef1(Sharedclass sh)
+	public SharedClass sh;
+ public Stepdef1(SharedClass sh)
  {
 	 this.sh=sh;
  }
@@ -27,7 +27,11 @@ public class Stepdef1
      WebDriverManager.chromedriver().setup();
       sh.driver=new ChromeDriver(); 
       sh.obj1=new pageClass1(sh.driver);
+      
+      
       sh.obj2=new Logout(sh.driver);
+      sh.driver.manage().window().maximize();
+      
  }
 
  @When("launch site {string}")
