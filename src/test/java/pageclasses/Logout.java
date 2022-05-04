@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Logout 
 {
-	
+	//locating elements
 	@FindBy(xpath="//div[text()='Logout']") public WebElement logout;
 	
 	public Logout(RemoteWebDriver driver)
