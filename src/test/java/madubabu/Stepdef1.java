@@ -79,7 +79,7 @@ public class Stepdef1
  @When("close browser")
  public void method6()
  {
-	 sh.driver.close();
+	 sh.driver.quit();
  }
  
 }
