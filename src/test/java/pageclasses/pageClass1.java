@@ -25,6 +25,7 @@ public class pageClass1
 	}
 	public void clickLogin() throws Exception
 	{
+		//click on click
 		login.click();
 		Thread.sleep(5000);
 	}
